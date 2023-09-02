@@ -1,0 +1,138 @@
+body {
+   background-color: #000000;
+   color: $white-color-text;
+   font-family: "PingFang SC";
+   //display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.wrapper {
+   max-width: 1000px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+
+   @media screen and (min-width: 768px) {}
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   padding: 20px 20px 20px 20px;
+   align-items: center;
+
+   @media screen and (min-width: 768px) {
+      align-items: normal;
+   }
+}
+
+.header {
+   background-color: $header-grey-bg;
+}
+
+.header__logo {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   align-items: center;
+
+   @media screen and (min-width: 768px) {
+      align-items: normal;
+   }
+}
+
+.header__img {
+   max-width: 175px;
+
+   img {
+      width: 100%;
+   }
+}
+
+main {
+   background-color: $main-bg-grey;
+}
+
+.components {}
+
+.components__title {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   padding-top: 64px;
+   padding-bottom: 25px;
+   align-items: center;
+
+   @media screen and (min-width: 768px) {
+      align-items: normal;
+   }
+}
+
+.components__json {
+   min-width: 350px;
+
+}
+
+.json {
+   display: flex;
+   flex-direction: column;
+}
+
+#result {
+}
+
+.userTitle {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 5px;
+
+   botton {
+      font-size: 20px;
+      font-weight: 500;
+   }
+}
+
+#userId {
+   visibility: hidden;
+   z-index: -100;
+   display: none;
+   opacity: 0;
+}
+
+table, td, tr, th {
+   padding: 5px;
+   border-color: #fff;
+   border-style: solid;
+   border-width: 1px;
+   border-collapse: collapse;
+}
+
+#table-wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.result {
+   width: 100%;
+   display: none;
+   z-index: -1000;
+   opacity: 0;
+   overflow: hidden;
+   visibility: hidden;
+
+   &.result--active {
+      display: inline-table;
+      z-index: 0;
+      opacity: 1;
+      overflow: visible;
+      visibility: visible;
+   }
+}

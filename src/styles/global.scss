@@ -1,0 +1,40 @@
+h1 {
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 48px;
+}
+
+h2 {
+   font-weight: 600;
+   font-size: 60px;
+   line-height: 80px;
+   text-transform: capitalize;
+}
+
+h3 {
+   font-style: normal;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 36px;
+}
+
+h6 {
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 22px;
+}
+
+a {
+   color: $violet;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 18px;
+}
+
+p {
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 18px;
+}
